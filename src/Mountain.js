@@ -1,6 +1,6 @@
 import './Mountain.css';
 //import { Parallax } from 'react-parallax';
-import hafez1 from './images/hafez1.jpg';
+import hafez from './images/hafez.png';
 import mountain from './images/mountain.png';
 import hill from './images/hill.png';
 import { useEffect } from 'react';
@@ -19,11 +19,9 @@ function Mountain() {
         <div className="content">
             <header className="header-main">
                 <div className="layers">
-                    <div className="layer-head">
-                        <h1 className="title">McGill Iranian Student Association</h1>
-                    </div>
-                    <div className="img-layer layer-base" style={{backgroundImage: `url(${hafez1})`, backgroundSize: "100% auto",}}></div>
-                    <div className="img-layer layer-mid" style={{backgroundImage: `url(${mountain})`, backgroundSize: "100% auto", backgroundRepeat: "no-repeat", bottom:"0",}}></div>
+                    
+                    <div className="img-layer layer-base" style={{backgroundImage: `url(${hafez})`, backgroundSize: "100%",}}></div>
+                    <div className="img-layer layer-mid" style={{backgroundImage: `url(${mountain})`, backgroundSize: "100% auto", backgroundRepeat: "no-repeat",}}></div>
                     <div className="img-layer layer-front" style={{backgroundImage: `url(${hill})`, backgroundSize: "100% auto", backgroundRepeat: "no-repeat",}}></div>
                 </div>
             </header>

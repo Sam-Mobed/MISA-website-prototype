@@ -1,34 +1,100 @@
-.content{
-    height: 80vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.parallax-container {
-    position: relative;
+:root{
+    --index: calc(1vw+1vh);
+    --text: #e7e7e0;
+    --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+@font-face{
+    font-family: "Poppins", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    font-weight: 900;
+}
+
+.parallax-container{
     height: 500px;
+    width: auto;
 }
 
-.parallax-layer {
+body {
+    background-color: #010101;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+.header-main{
+    position: relative;
+}
+
+.header-main::after{
     position: absolute;
-    top: 0;
-    left: 0;
+    content: "";
+    z-index: 100;
     width: 100%;
-    height: 100%;
+    height:calc(var(--index)*10);
+    background-image: url("./images/hill.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: calc(var(--index)*-4.5);
 }
 
-.layer-1 {
-    z-index: 3; /* Set the z-index to control the stacking order */
-}
-
-.layer-2 {
-    z-index: 2;
-}
-
-.layer-3 {
-    z-index: 1;
-}
-
-.site-title{
+.layers{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+.layer-head{
+    z-index: 1;
+    transform: translate3d(0, calc(var(--scrollTop)/2), 0);
+    transition: var(--transition);
+    will-change: transform;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--text);
+    text-shadow: 0 0 20px #ba9827;
+}
+
+.title{
+    font-size: calc(var(--index) * 2.75);
+    letter-spacing: calc(var(--index) / 2.5);
+}
+
+.img-layer{
+    height: 100%;
     width: 100%;
+    position: absolute;
+    will-change: transform;
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.layer-base{
+    transform: translate3d(0,calc(var(--scrollTop) / 1.6), 0);
+    z-index: 0;
+    background-position: top auto;
+}
+
+.layer-mid{
+    transform: translate3d(0,calc(var(--scrollTop) / 2.5), 0);
+    background-position: bottom;
+}
+
+.layer-front{
+    transform: translate3d(0,calc(var(--scrollTop) / 5.6), 0);
+    background-position: bottom;
+}
+
+.content{
+    will-change: transform;
 }
