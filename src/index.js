@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Mountain from './Mountain';
+import Mountain from './components/Mountain';
+import Title from './components/Title';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Mountain />
+    <Title />
     <App />
   </React.StrictMode>
 );

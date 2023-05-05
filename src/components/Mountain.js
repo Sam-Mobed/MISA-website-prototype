@@ -29,20 +29,5 @@ function Mountain() {
     </div>
     );
 }
-//<h1 class="site-title">McGill Iranian Student Association</h1>
+
 export default Mountain;
-
-/* 
-
-<div className="parallax-layer layer-1">
-            <Parallax strength={100} bgImage={hafez1}></Parallax>
-        </div>
-        <div className="parallax-layer layer-2">
-            <Parallax strength={300} bgImage={mountain}></Parallax>
-        </div>
-        <div className="parallax-layer layer-3">
-            <Parallax strength={600} bgImage={hill}></Parallax>
-        </div>
-
-
-*/
