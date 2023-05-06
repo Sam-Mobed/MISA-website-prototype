@@ -1,9 +1,59 @@
 .title-container{
     background-color: antiquewhite;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+    height: 80vh;
     width: auto;
 }
 
-.title{
-    
+@font-face {
+    font-family: "PT Serif";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+    font-weight: normal;
+    font-style: normal;
 }
+
+.title{
+    font-family: "PT Serif", 'Gill Sans';
+}
+
+.row1 {
+    flex-grow: 1;
+    background-color: red;
+    position: relative;
+}
+
+.row2 {
+    flex-grow: 1;
+    background-color: green;
+    position: relative;
+}
+
+.row3 {
+    flex-grow: 1;
+    background-color: blue;
+    position: relative;
+}
+
+.img{
+    position: absolute;
+    height:100%;
+    width: auto;
+}
+
+.cloud{
+    top: 0;
+    right: 0;
+}
+
+.blue_clouds{
+    top: 0;
+    right: 30px; 
+}
+
+.hanging_plants{
+    top: 0;
+    left: 0;
+}
+  

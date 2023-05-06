@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <Mountain />
     <Title />
-    <App />
+    
   </React.StrictMode>
 );
 
