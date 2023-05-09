@@ -3,8 +3,33 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App test">
-        <h1>Hello World !</h1>
+    <div className="container">
+        <div className="purpose-div">
+          <h1 className="purpose-title">Our Purpose</h1>
+          <p className="purpose-description">Dscription</p>
+        </div>
+        <div className="values-div">
+          <h1 className="values-title">Core Values</h1>
+          <div className="values-container">
+            <div className="value1">
+              <h2>Value1</h2>
+              <p>Descrpition</p>
+            </div>
+            <div className="value1">
+              <h2>Value2</h2>
+              <p>Descrpition</p>
+            </div>
+            <div className="value1">
+              <h2>Value3</h2>
+              <p>Descrpition</p>
+            </div>
+          </div>
+          <p>Introduction to constitution</p>
+          <a>Link to constitution that opens it in another tab</a>
+        </div>
+
+        
+
     </div>
   );
 }

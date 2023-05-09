@@ -13,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Mountain />
     <Title />
+    <App />
     <Footer />
   </React.StrictMode>
 );

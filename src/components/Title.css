@@ -1,59 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Titillium+Web:wght@200&display=swap');
+
 .title-container{
-    background-color: antiquewhite;
+    background: antiquewhite;
     display: flex;
     flex-direction: column;
-    margin-top: 400px;
-    height: 80vh;
+    margin-top: 0px;
     width: auto;
+    text-align: center;
 }
 
-@font-face {
-    font-family: "PT Serif";
-    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-    font-weight: normal;
-    font-style: normal;
+.spacer{
+    background-image: url(./images/layered-waves-haikei.svg);
+    aspect-ratio: 1500/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title{
-    font-family: "PT Serif", 'Gill Sans';
+    font-family: 'Oswald', sans-serif;
+    white-space: nowrap;
+    padding-top: 200px;
+    
+    font-size: 8vw;
+    background: conic-gradient(#553c9a, #ee4b2b, Green, #553c9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.row1 {
-    flex-grow: 1;
-    background-color: red;
-    position: relative;
-}
 
-.row2 {
-    flex-grow: 1;
-    background-color: green;
-    position: relative;
-}
-
-.row3 {
-    flex-grow: 1;
-    background-color: blue;
-    position: relative;
-}
-
-.img{
-    position: absolute;
-    height:100%;
-    width: auto;
-}
-
-.cloud{
-    top: 0;
-    right: 0;
-}
-
-.blue_clouds{
-    top: 0;
-    right: 30px; 
-}
-
-.hanging_plants{
-    top: 0;
-    left: 0;
-}
-  
