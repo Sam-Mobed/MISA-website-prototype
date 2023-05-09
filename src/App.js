@@ -6,27 +6,32 @@ function App() {
     <div className="container">
         <div className="purpose-div">
           <h1 className="purpose-title">Our Purpose</h1>
-          <p className="purpose-description">Dscription</p>
+          <p className="purpose-description">
+          We are a tight-knit community of McGill students with a shared passion for fostering Iranian culture and traditions in Montreal. 
+          Our club provides a welcoming and inclusive space for individuals to connect, socialize, and engage in meaningful events and activities. 
+          From lively cultural celebrations to thought-provoking discussions, we offer a diverse range of experiences that showcase the rich heritage of Iran. 
+          By bringing people together, we aim to build lasting friendships and a deeper appreciation for the vibrant Iranian community here in Montreal.
+          </p>
         </div>
         <div className="values-div">
           <h1 className="values-title">Core Values</h1>
           <div className="values-container">
-            <div className="value1">
-              <h2>Value1</h2>
-              <p>Descrpition</p>
+            <div className="value value1">
+              <h2 className="name">Value1</h2>
+              <p className="description">Descrpition</p>
             </div>
-            <div className="value1">
-              <h2>Value2</h2>
-              <p>Descrpition</p>
+            <div className="value value1">
+              <h2 className="name">Value2</h2>
+              <p className="description">Descrpition</p>
             </div>
-            <div className="value1">
-              <h2>Value3</h2>
-              <p>Descrpition</p>
+            <div className="value value1">
+              <h2 className="name">Value3</h2>
+              <p className="description">Descrpition</p>
             </div>
-          </div>
-          <p>Introduction to constitution</p>
-          <a>Link to constitution that opens it in another tab</a>
+          </div>  
         </div>
+        <p className="intro-to-const">Introduction to constitution</p>
+        <a className='link-to-const'>Link to constitution that opens it in another tab</a>
 
         
 

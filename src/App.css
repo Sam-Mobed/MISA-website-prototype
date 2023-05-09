@@ -1,9 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Titillium+Web:wght@200&display=swap');
 
-*{
+p, h1, h2, a{
     font-family: 'Oswald', sans-serif;
+}
+
+.purpose-title{
+    font-size: 4.5vw;
+}
+
+.purpose-description, .name, .intro-to-const{
+    font-size: 2vw;
+}
+
+.values-title{
+    font-size: 4.5vw;
+    padding-top: 10px;
+}
+
+.container{
+    border-style: solid;
+    border-width: 5px;
+    border-color: brown;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.purpose-div, .values-div{
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
 }
 
 .container{
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }
+
+.values-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.values-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.description{
+    font-size: 1.5vw;
+}
+
+.link-to-const{
+    font-size: 1.5vw;
+}
+
